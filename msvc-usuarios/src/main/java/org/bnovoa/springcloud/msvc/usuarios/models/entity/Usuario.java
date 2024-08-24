@@ -19,6 +19,17 @@ public class Usuario {
     @Column(name = "password")
     private String password;
 
+    public Usuario() {
+        //Constructor
+    }
+
+    public Usuario(Long id, String nombre, String email, String password) {
+        this.id = id;
+        this.nombre = nombre;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getPassword() {
         return password;
     }

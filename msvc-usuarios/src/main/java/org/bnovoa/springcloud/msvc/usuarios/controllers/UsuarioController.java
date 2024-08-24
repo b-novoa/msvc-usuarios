@@ -16,7 +16,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @GetMapping
+    @GetMapping("/")
     public List<Usuario> listar(){
         return usuarioService.findAll();
     }
